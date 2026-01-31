@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class NewtonRaphsonSQRT {
     void main(String[] args){
-        IO.println("Aprox. square root: " + sqrt(Integer.parseInt(args[0]), Integer.parseInt(args[1])));
+        IO.println("Aprox. square root: " + sqrt(Double.parseDouble(args[0]), Integer.parseInt(args[1])));
     }
 
     double  sqrt(double num, int precision){
