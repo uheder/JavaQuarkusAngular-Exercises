@@ -12,9 +12,10 @@ public class RightTriangle {
         int side2 = Integer.parseInt(args[1]);
         int side3 = Integer.parseInt(args[2]);
 
-        boolean isRightTriangle = Math.pow(side1, 2) + Math.pow(side2, 2) == Math.pow(side3, 2)
+        boolean isRightTriangle = side1 > 0 && side2 > 0 & side3 >0 &&
+                (Math.pow(side1, 2) + Math.pow(side2, 2) == Math.pow(side3, 2)
                 || Math.pow(side1, 2) + Math.pow(side3, 2) == Math.pow(side2, 2)
-                || Math.pow(side2, 2) + Math.pow(side3, 2) == Math.pow(side1, 2);
+                || Math.pow(side2, 2) + Math.pow(side3, 2) == Math.pow(side1, 2));
 
         System.out.println(isRightTriangle);
     }
